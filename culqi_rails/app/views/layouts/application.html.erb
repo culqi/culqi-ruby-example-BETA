@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CulqiRails</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag 'waitMe.min.css', media: 'all' %>
+    <%= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', media: 'all' %>
+  </head>
+
+  <body>
+    <%= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js' %>
+    <%= javascript_include_tag 'https://checkout.culqi.com/js/v2' %>
+    <%= javascript_include_tag 'waitMe.min.js' %>
+    <%= yield %>
+  </body>
+</html>
