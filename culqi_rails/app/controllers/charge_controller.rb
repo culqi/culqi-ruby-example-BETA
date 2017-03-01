@@ -5,7 +5,7 @@ class ChargeController < ApplicationController
   protect_from_forgery with: :null_session
 
   def create
-    Culqi.api_key = 'sk_test_UTCQSGcXW8bCyU59'
+    Culqi.secret_key = 'sk_test_UTCQSGcXW8bCyU59'
     charge = Culqi::Charge.create(
       :amount => 1000,
       :antifraud_details => {
